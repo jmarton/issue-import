@@ -1,0 +1,11 @@
+{
+  "token": "insert your github OAuth token here"
+, "repository-path": "your-name-or-organization-name/repo-name"
+, "placeholder-issue-title": "Placeholder issue No. {num}"
+, "placeholder-issue-body": "Blank issue created to skip missing issue sequence number."
+, "placeholder-issue-labels": ["placeholder", "wontfix"]
+, "issue-title": "Imported issue No. {num}"
+, "max-issue-id": 5
+, "sleep-seconds": 1
+, "preserve-issue-numbers": true
+}
