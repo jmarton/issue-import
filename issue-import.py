@@ -66,7 +66,7 @@ for num in range(1, config['max-issue-id'] + 1): # iterate through required issu
             #pprint(p.json())
         c_num = resp['number']
         if c_num != num and config['preserve-issue-numbers']:
-            raise Exceprion('We were to create issue #{0}, but #{1} was created instead. Giving up.')
+            raise Exception('We were to create issue #{0}, but #{1} was created instead. Giving up.'.format(num, c_num))
         elif not params['open']:
             c = requests.patch(urls['issue_modify'].format(num=c_num), headers=headers, data=json.dumps({'state': 'closed'}))
     except IOError:
